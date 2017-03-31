@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.assignment3.FormFragment">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+       <ImageView
+           android:layout_width="250dp"
+           android:layout_height="250dp"
+           android:id="@+id/user_image"
+           android:src="@drawable/choose_pic"
+           android:scaleType="fitXY"
+           android:layout_gravity="center_horizontal"
+           android:layout_margin="16dp"
+           android:padding="5dp"
+           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="First Name"
+            android:id="@+id/first_name_form"
+            />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Last Name"
+                android:id="@+id/last_name_form"
+                />
+
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstates"
+            android:text="Date Of Birth"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/date_of_birth_form_btn"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/date_birth_tv_form"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_radio_group"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textColor="@color/colorWhite"
+
+                />
+
+            <RadioButton android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+               />
+            <RadioButton android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                />
+
+
+
+        </RadioGroup>
+
+
+        <Spinner
+            android:id="@+id/streams_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+            android:layout_margin="12dp"
+            android:theme="@style/app_font"
+            android:text="submit"
+            android:background="@drawable/buttonstates"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
+
+
+</LinearLayout>

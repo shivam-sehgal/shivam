@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.user.assignment3.Fragment1">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_info"
+        android:id="@+id/recycler"
+
+        ></android.support.v7.widget.RecyclerView>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        android:background="@drawable/buttonstates"
+        android:text="Add Info"
+        android:id="@+id/add_info"
+         android:layout_margin="10dp"
+        android:textColor="@color/colorWhite"
+        />
+
+</RelativeLayout>
